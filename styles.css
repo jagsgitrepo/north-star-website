@@ -22,3 +22,21 @@
 .footer-brand{display:flex;align-items:center}
 .footer-brand img{display:block;width:250px;height:50px;object-fit:contain;object-position:left center}
 @media(max-width:560px){.brand img{width:150px;height:50px}.footer-brand img{width:150px;height:50px}}
+
+/* Investor interest form */
+.invest .split{align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+@media(max-width:900px){.invest .split{grid-template-columns:minmax(0,1fr)}}
+.invest-card{background:#ffffff0b;border:1px solid #ffffff1f;border-radius:22px;padding:30px;box-shadow:0 30px 60px #0003}
+.invest-card .nsfields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.invest-card label{display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--muted)}
+.invest-card input,.invest-card select{font:inherit;color:#fff;padding:12px;border:1px solid #ffffff33;border-radius:10px;background:#081827}
+.invest-card input:focus,.invest-card select:focus{outline:2px solid var(--cyan);outline-offset:1px}
+.invest-btn{border:0;color:#fff;font:inherit;font-weight:800;cursor:pointer}
+.invest-card .small{color:#8ea3b8}
+.invest-card .success h3{font-size:24px;margin-top:0}
+.invest-card .success p{color:var(--muted);line-height:1.55}
+button[disabled]{opacity:.6;cursor:wait}
+.form-status{margin:10px 0 0;font-size:14px;color:#ff9b9b;min-height:1em}
+.form-status:empty{display:none}
+.hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media(max-width:600px){.invest-card{padding:22px}.invest-card .nsfields{grid-template-columns:1fr}.invest-card .full{grid-column:auto}}
