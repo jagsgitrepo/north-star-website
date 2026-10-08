@@ -40,3 +40,7 @@ button[disabled]{opacity:.6;cursor:wait}
 .form-status:empty{display:none}
 .hp{position:absolute!important;left:-9999px;width:1px;height:1px;overflow:hidden}
 @media(max-width:600px){.invest-card{padding:22px}.invest-card .nsfields{grid-template-columns:1fr}.invest-card .full{grid-column:auto}}
+
+
+/* Join Early Access dropdowns: dark option list so white text stays readable */
+#ea select option{background:#081827;color:#f7fafc}
